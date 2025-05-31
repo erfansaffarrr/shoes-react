@@ -1,0 +1,108 @@
+// ریست کردن استایل‌های پیش‌فرض مرورگر
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  // تنظیم فونت و پس‌زمینه اصلی سایت
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    direction: rtl;  // اگر سایت فارسی هست
+  }
+  
+  // لینک‌ها
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  // دکمه‌ها
+  button {
+    border: none;
+    cursor: pointer;
+  }
+  
+  // استایل کلی برای عکس‌ها
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  $primary-color: #8d6e63; // قهوه‌ای اصلی
+  $secondary-color: #d7ccc8; // کرمی
+  $background-color: #f5f5f5; // پس‌زمینه کلی سایت
+  $text-color: #333; // رنگ متن
+  
+  // استفاده از متغیرها
+  body {
+    background-color: $background-color;
+    color: $text-color;
+  }
+// تغییر رنگ دکمه‌های بوت‌استرپ
+.btn-primary {
+    background-color: $primary-color;
+    border: none;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+  
+  // تغییر رنگ لینک‌ها
+  .nav-link {
+    color: $primary-color;
+    &:hover {
+      color: darken($primary-color, 15%);
+    }
+  }
+  .header {
+    background-color: $primary-color;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    margin-right: 400px;
+  }
+  
+  .footer {
+    background-color: $secondary-color;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+  }
+  body {
+    background-image: url("/assets/images.jpg"); // مسیر تصویر
+    background-size: cover;  // تمام صفحه رو بپوشونه
+    background-position: center;  // دقیقاً وسط قرار بگیره
+    background-attachment: fixed; // هنگام اسکرول ثابت بمونه
+  }
+  .product-card img {
+    display: block;
+    margin: 0 auto;  // وسط چین کردن
+    max-width: 100%;  // جلوگیری از بیش‌ازحد بزرگ شدن
+    height: auto;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Vazirmatn', sans-serif;
+  background-color: #f7f3ef;
+  color: #333;
+  
+}
+
+.home-section {
+  min-height: 10vh; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;   
+  align-items: flex-start;    
+  padding-top: 50px;          
+  text-align: center;
+  align-items: center;
+}
